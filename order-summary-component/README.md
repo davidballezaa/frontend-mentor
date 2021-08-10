@@ -5,6 +5,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
+  - [Link](#link)
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -12,6 +13,10 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [Author](#author)
 
 ## Overview
+
+### Link
+
+-Live demo: [https://davidballezaa.github.io/frontend-mentor/order-summary-component/](https://davidballezaa.github.io/frontend-mentor/order-summary-component/)
 
 ### Screenshot
 
