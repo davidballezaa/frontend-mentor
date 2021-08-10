@@ -25,7 +25,8 @@ body {
 
 main {
     padding: 6rem 2rem;
-    height: 100vh;
+    height: 100%;
+
 }
 
 main .card {
