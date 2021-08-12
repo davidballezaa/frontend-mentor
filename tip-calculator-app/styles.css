@@ -37,6 +37,10 @@ input:focus {
     outline: none;
 }
 
+.input-text-info {
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
+}
 
 /* Page Start */
 
@@ -58,47 +62,42 @@ main .calculator-card {
     max-width: 100%;
 }
 
+/* INPUT BILL CONTAINER */
+
 .input__bill-container {
+    position: relative;
     margin-bottom: 30px;
 }
 
-.input-text-info {
-    font-weight: 700;
-    color: var(--dark-grayish-cyan);
+.input__bill-description {
+    width: 100%;
 }
 
-.bill-input__container:hover {
-    outline: 1.5px solid var(--strong-cyan);
-    outline-style: auto;
-}
+/* INPUT BILL CONTAINER END */
 
 /* IMG + INPUT */
 .input__container {
     background-color: var(--very-light-grayish-cyan);
     margin-top: 5px;
     padding: 8px 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.input__container img {
-    width: 18px;
-    height: 18px;
-}
-
-.input__container input {
     border: 0;
-    background-color: inherit;
-    margin-left: 10px;
-    flex: 100%;
-    max-width: calc(100% - 20px);
+    border-radius: 5px;
+    width: 100%;
     color: var(--very-dark-cyan);
     font-weight: 700;
     text-align: right;
 }
 
+.input__container:focus {
+    outline: 1.5px solid var(--strong-cyan);
+    outline-style: auto;
+}
 
+.input__container-image {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+}
 
 /* IMG + INPUT END*/
 
@@ -165,6 +164,7 @@ main .calculator-card {
 /* NUMBER OF PEOPLE CONTAINER */
 
 .input__number-people-container {
+    position: relative;
     margin-bottom: 30px;
 }
 
@@ -189,7 +189,12 @@ main .calculator-card {
 
 
 .number-people-input--error {
-    outline: 1.5px solid red;
+    outline: 1.5px solid red; 
+    outline-style: auto;
+}
+
+.number-people-input--error:focus {
+    outline: 1.5px solid red; 
     outline-style: auto;
 }
 
