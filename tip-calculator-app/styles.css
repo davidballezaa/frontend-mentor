@@ -37,6 +37,9 @@ input:focus {
     outline: none;
 }
 
+
+/* Page Start */
+
 /* HEADER */
 
 header {
@@ -172,10 +175,12 @@ main .calculator-card {
     align-items: center;
 }
 
-.number-people-input__container:hover {
-    outline: 1px solid var(--strong-cyan);
-    outline-style: auto;
+.number-people-error-message {
+    display: none;
+    font-weight: 700;
+    color: red;
 }
+
 
 /* NUMBER OF PEOPLE CONTAINER END */
 
@@ -188,6 +193,11 @@ main .calculator-card {
     outline-style: auto;
 }
 
+.number-people-error-message--on {
+    display: initial;
+}
+
+/* Javascript styles END */
 
 
 
