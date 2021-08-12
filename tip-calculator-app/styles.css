@@ -142,11 +142,6 @@ main .calculator-card {
     color: var(--very-dark-cyan);
 }
 
-.button--selected{
-    background-color: var(--strong-cyan);
-    color: var(--very-dark-cyan);
-}
-
 .input__tip-buttons input {
     border: 0;
     background-color: var(--very-light-grayish-cyan);
@@ -155,10 +150,7 @@ main .calculator-card {
     text-align: right;
 }
 
-.input__tip-buttons input:focus {
-    outline: 1px solid var(--strong-cyan);
-    outline-style: auto;
-}
+
 
 /* INPUT TIP CONTAINER END */
 
@@ -204,7 +196,7 @@ main .calculator-card {
 .result-result {
     color: var(--strong-cyan);
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     max-width: calc(100% - 96px);
     overflow-x: auto;
 }
@@ -223,7 +215,7 @@ main .calculator-card {
     margin-bottom: 25px;
 }
 
-.result__button button {
+.result__button .button__reset {
     padding: 8px 0;
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
@@ -232,6 +224,7 @@ main .calculator-card {
     border: 0;
     border-radius: 5px;
     width: 100%;
+    cursor: pointer;
 }
 /* CARD RESULT END*/
 
@@ -259,6 +252,22 @@ footer {
 .number-people-error-message--on {
     display: initial;
 }
+
+.input__tip-buttons .button--selected{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.input__tip-buttons .button--selected:hover{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.input__tip-buttons .input__tip-input--clicked {
+    outline: 1px solid var(--strong-cyan);
+    outline-style: auto;
+}
+
 
 /* Javascript styles END */
 

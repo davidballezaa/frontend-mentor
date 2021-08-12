@@ -12,11 +12,29 @@ const number_people_error_message = document.querySelector('.number-people-error
 const tip_result = document.getElementById('tip-result');
 const total_result = document.getElementById('total-result');
 
+// reset button
+const reset_button = document.querySelector('.button__reset');
+
 // variables
 
 var tip_value;
 
-//code
+//functions
+
+
+function checkInvalid(){
+    if(parseInt(number_people_input.value)==0){
+        number_people_input.classList.toggle('number-people-input--error');
+        number_people_error_message.classList.toggle('number-people-error-message--on');
+        number_people_error_message.classList.remove('no-display');
+        tip_result.innerHTML = '$0.00';
+        total_result.innerText = '$0.00';
+    } else {
+        number_people_input.classList.remove('number-people-input--error');
+        number_people_error_message.classList.remove('number-people-error-message--on');
+        getTotal();
+    }
+}
 
 function buttonRemoveClicked(){
     for(let j=0; j<buttons.length; j++){
@@ -42,21 +60,6 @@ function inputClicked(){
     }
 }
 
-
-function checkInvalid(){
-    if(parseInt(number_people_input.value)==0){
-        number_people_input.classList.toggle('number-people-input--error');
-        number_people_error_message.classList.toggle('number-people-error-message--on');
-        number_people_error_message.classList.remove('no-display');
-        tip_result.innerHTML = '$0.00';
-        total_result.innerText = '$0.00';
-    } else {
-        number_people_input.classList.remove('number-people-input--error');
-        number_people_error_message.classList.remove('number-people-error-message--on');
-        getTotal();
-    }
-}
-
 function getTotal(){
     if(bill_input.value!='' && tip_value!=undefined){
         var number_people;
@@ -71,17 +74,23 @@ function getTotal(){
 
         var total_per_person = ((+((parseFloat(bill_input.value) / number_people).toFixed(2))) + (+tip_per_person)).toFixed(2);
         total_result.innerText = '$' + total_per_person;
+
     }
 }
 
 function reset(){
     bill_input.value = '';
     number_people_input.value = '';
+    tipInput.value = '';
     tip_result.innerText = '$0.00';
     total_result.innerText = '$0.00';
     checkInvalid();
     buttonRemoveClicked();
 }
+
+
+
+// event listeners
 
 bill_input.addEventListener('click', getTotal);
 bill_input.addEventListener('keyup', getTotal);
