@@ -27,10 +27,10 @@
 
       <div class="input__bill-container">
         <div class="input__bill-description">
-          <label for="bill-input" class="input-text-info">Bill</label>
+        <label for="bill-input" class="input-text-info">Bill</label>
         </div>
           <img src="./assets/images/icon-dollar.svg" alt="dollar icon" class="input__container-image">
-          <input type="number" id="bill-input" class="input__container">
+          <input type="number" id="bill-input" class="input__container" min="0">
       </div>
 
       <div class="input__tip-container">
@@ -41,7 +41,7 @@
           <button type="button" class="tip-button">15%</button>
           <button type="button" class="tip-button">25%</button>
           <button type="button" class="tip-button">50%</button>
-          <input type="number" placeholder="Custom">
+          <input type="number" placeholder="Custom" min="0">
         </div>
       </div>
 
@@ -51,7 +51,7 @@
           <p class="number-people-error-message">Can't be zero</p>
         </div>
             <img src="./assets/images/icon-person.svg" alt="person icon" class="input__container-image">
-            <input type="number" id="number-people-input" class="input__container">
+            <input type="number" id="number-people-input" class="input__container" min="0" placeholder="1">
       </div>
 
     </div>
