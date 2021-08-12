@@ -39,7 +39,7 @@ input:focus {
 
 .input-text-info {
     font-weight: 700;
-    color: var(--dark-grayish-cyan);
+    color: var(--very-dark-grayish-cyan);
 }
 
 /* Page Start */
@@ -94,6 +94,7 @@ main .calculator-card {
 }
 
 .input__container-image {
+    font-weight: 700;
     position: absolute;
     top: 60%;
     left: 10px;
@@ -185,6 +186,63 @@ main .calculator-card {
 /* NUMBER OF PEOPLE CONTAINER END */
 
 
+/* CARD RESULT */
+
+.card__result {
+    background-color: var(--very-dark-cyan);
+    padding: 45px 22px 25px 22px;
+    border-radius: inherit;
+}
+
+.result-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.result-result {
+    color: var(--strong-cyan);
+    font-weight: 700;
+    font-size: 2.4rem;
+    max-width: calc(100% - 96px);
+    overflow-x: auto;
+}
+
+.result__info p{
+    font-weight: 700;
+    color: var(--very-light-grayish-cyan);
+}
+
+.result__info span {
+    font-size: 1.2rem;
+    color: var(--light-grayish-cyan);
+}
+
+.result__total {
+    margin-bottom: 25px;
+}
+
+.result__button button {
+    padding: 8px 0;
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+}
+/* CARD RESULT END*/
+
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+}
+
+/* FOOTER END*/
+
 /* Javascript styles */
 
 
@@ -205,13 +263,6 @@ main .calculator-card {
 /* Javascript styles END */
 
 
-
-
-.card__result {
-    background-color: var(--very-dark-cyan);
-    padding: 45px 22px 25px 22px;
-    border-radius: inherit;
-}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

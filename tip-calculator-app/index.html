@@ -23,8 +23,10 @@
   <main>
   <div class="calculator-card">
 
+    <!-- CARD INPUT -->
     <div class="card__input">
 
+      <!-- INPUT BILL -->
       <div class="input__bill-container">
         <div class="input__bill-description">
         <label for="bill-input" class="input-text-info">Bill</label>
@@ -32,7 +34,9 @@
           <img src="./assets/images/icon-dollar.svg" alt="dollar icon" class="input__container-image">
           <input type="number" id="bill-input" class="input__container" min="0">
       </div>
+      <!-- INPUT BILL END -->
 
+      <!-- INPUT TIP -->
       <div class="input__tip-container">
         <p class="input-text-info">Select tip %</p>
         <div class="input__tip-buttons">
@@ -44,7 +48,9 @@
           <input type="number" placeholder="Custom" min="0">
         </div>
       </div>
+      <!-- INPUT TIP END -->
 
+      <!-- INPUT NUMBER PEOPLE -->
       <div class="input__number-people-container">
         <div class="input__number-people-description">
           <label for="number-people-input" class="input-text-info">Number of people</label>
@@ -53,28 +59,33 @@
             <img src="./assets/images/icon-person.svg" alt="person icon" class="input__container-image">
             <input type="number" id="number-people-input" class="input__container" min="0" placeholder="1">
       </div>
+      <!-- INPUT NUMBER PEOPLE END -->
 
     </div>
+    <!-- CARD INPUT END -->
+
+    <!-- CARD RESULT -->
     <div class="card__result">
-      <div class="result__tip">
-        <div class="tip__info">
+      <div class="result__tip result-container">
+        <div class="result__info">
           <p>Tip Amount</p>
           <span>/ person</span>
         </div>
-          <p id="tip-result">$0.00</p>
+          <p id="tip-result" class="result-result">$0.00</p>
       </div>
-      <div class="result__total">
-        <div class="total__info">
+      <div class="result__total result-container">
+        <div class="result__info">
           <p>Total</p>
           <span>/ person</span>
         </div>
-        <p id="total-result">$0.00</p>
+        <p id="total-result" class="result-result">$0.00</p>
       </div>
 
       <div class="result__button">
         <button type="button" onclick="reset()">RESET</button>
       </div>
     </div>
+    <!-- CARD RESULT END -->
   </div>
   </main>
 
