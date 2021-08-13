@@ -206,6 +206,10 @@ header {
     overflow-x: auto;
 }
 
+.result__info {
+    margin-right: 10px;
+}
+
 .result__info p{
     font-weight: 700;
     color: var(--very-light-grayish-cyan);
@@ -323,7 +327,11 @@ footer {
 
     .card__result {
         max-width: 396px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
 
     .result-result {
         font-size: 4rem;
