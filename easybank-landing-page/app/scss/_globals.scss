@@ -1,3 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: red;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+// Flexbox
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
 }
