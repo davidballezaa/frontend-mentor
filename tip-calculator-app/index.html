@@ -32,7 +32,7 @@
         <label for="bill-input" class="input-text-info">Bill</label>
         </div>
           <img src="./assets/images/icon-dollar.svg" alt="dollar icon" class="input__container-image">
-          <input type="number" id="bill-input" class="input__container" min="0">
+          <input type="number" id="bill-input" class="input__container" min="0" pattern="[0-9]*">
       </div>
       <!-- INPUT BILL END -->
 
@@ -45,7 +45,7 @@
           <button type="button" class="tip-button">15%</button>
           <button type="button" class="tip-button">25%</button>
           <button type="button" class="tip-button">50%</button>
-          <input type="number" placeholder="Custom" min="0" id="input__tip-custom" class="input__tip-input">
+          <input type="number" placeholder="Custom" min="0" pattern="[0-9]*" id="input__tip-custom" class="input__tip-input">
         </div>
       </div>
       <!-- INPUT TIP END -->
@@ -57,7 +57,7 @@
           <p class="number-people-error-message">Can't be zero</p>
         </div>
             <img src="./assets/images/icon-person.svg" alt="person icon" class="input__container-image">
-            <input type="number" id="number-people-input" class="input__container" min="0" placeholder="1">
+            <input type="number" id="number-people-input" class="input__container" min="0" pattern="[0-9]*" placeholder="1">
       </div>
       <!-- INPUT NUMBER PEOPLE END -->
 

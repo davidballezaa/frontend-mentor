@@ -123,10 +123,12 @@ main .calculator-card {
 
 .input__tip-buttons > * {
     height: 45px;
-    min-width: 100px;
+    width: 100%;
+    min-width: 120px;
     max-width: 150px;
     border-radius: 5px;
     font-weight: 700;
+    justify-self: center;
 }
 
 .input__tip-buttons  button {
