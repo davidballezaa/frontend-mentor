@@ -39,7 +39,7 @@ input:focus {
 
 .input-text-info {
     font-weight: 700;
-    color: var(--very-dark-grayish-cyan);
+    color: var(--dark-grayish-cyan);
 }
 
 /* Page Start */
@@ -52,10 +52,12 @@ header {
     padding: 50px 0 40px 0;
 }
 
-main .calculator-card {
+.calculator-card {
     background-color: var(--white);
     padding: 40px 32px 33px 32px;
     border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card__input {
@@ -114,7 +116,7 @@ main .calculator-card {
     margin-bottom: 10px;
 }
 
-.input__tip-container .input__tip-buttons {
+.input__tip-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -125,7 +127,7 @@ main .calculator-card {
     height: 45px;
     width: 100%;
     min-width: 120px;
-    max-width: 150px;
+    max-width: 250px;
     border-radius: 5px;
     font-weight: 700;
     justify-self: center;
@@ -186,6 +188,7 @@ main .calculator-card {
     background-color: var(--very-dark-cyan);
     padding: 45px 22px 25px 22px;
     border-radius: inherit;
+    max-width: 100%;
 }
 
 .result-container{
@@ -273,7 +276,60 @@ footer {
 
 /* Javascript styles END */
 
-
-
-.attribution { font-size: 11px; text-align: center; }
+/* DEFAULT STYLES */
+.attribution { font-size: 13px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+/* DEFAULT STYLES END */
+
+@media (min-width: 1024px){
+
+    body {
+        font-size: 1.6rem;
+    }
+
+    input {
+        font-size: 2.4rem;
+    }
+
+
+    header {
+        padding-bottom: 85px;
+    }
+
+    main {
+        padding: 0 30px;
+    }
+
+    .calculator-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 40px;
+    }
+
+    .input__tip-buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .input__tip-buttons > * {
+        max-width: 120px;
+    }
+
+    .input__tip-buttons  button {
+        font-size: 2.4rem;
+    }
+
+    .card__result {
+        max-width: 396px;
+    }
+
+    .result-result {
+        font-size: 4rem;
+    }
+
+    .attribution {
+        font-size: 1.6rem;
+    }
+}
