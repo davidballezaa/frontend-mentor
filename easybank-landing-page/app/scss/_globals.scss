@@ -14,12 +14,20 @@ html {
 
 body {
     font-family: 'Public Sans', sans-serif;
-    font-size: 1.8rem;
+    font-size: $font-medium;
     font-weight: 400;
 }
 
 a, a:hover, a:visited {
     text-decoration: none;
+}
+
+// Buttons
+
+button, .button {
+    padding: 1.4rem 3.5rem;
+    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    border-radius: 4rem;
 }
 
 // Flexbox
@@ -33,5 +41,19 @@ a, a:hover, a:visited {
 
     &-ai-c {
         align-items: center;
+    }
+}
+
+// Visibility
+
+.hide-for-desktop { //Hide mobile items
+    @media(min-width: 801px) {
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @media(max-width: 800px) { //Hide desktop items
+        display: none;
     }
 }
