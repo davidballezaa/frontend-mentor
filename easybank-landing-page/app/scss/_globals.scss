@@ -39,9 +39,25 @@ button, .button {
         justify-content: space-between;
     }
 
+    &-jc-c {
+        justify-content: center;
+    }
+
     &-ai-c {
         align-items: center;
     }
+
+    &-d-col {
+        flex-direction: column;
+    }
+
+}
+
+// Spacing
+
+.container-left-right{
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
 }
 
 // Visibility
