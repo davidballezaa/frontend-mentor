@@ -10,11 +10,11 @@
 
     &__logo {
 
-        max-height: 20px;
+        max-height: 22px;
 
         img {
-            width: 140px;
-            height: 20px;
+            width: 141px;
+            height: 22px;
         }
     }
 
@@ -22,7 +22,7 @@
 
         span {
             display: block;
-            width: 40px;
+            width: 26px;
             height: 3px;
             background-color: $darkBlue;
 
@@ -37,11 +37,34 @@
     &__links {
 
         a { 
+            position: relative;
             color: $grayishBlue;
             font-size: $font-small;
+            transition: color 300ms ease-in-out;
 
             &:not(:last-child) {
                 margin-right: 3.2rem;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                top: 43px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: $darkBlue;
+                
+                &::before {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -50,6 +73,11 @@
 
         font-size: $font-small;
         color: $white;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.65;
+        }
     }
 
 }
