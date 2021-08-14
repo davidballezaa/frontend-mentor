@@ -1,5 +1,30 @@
 .header {
 
+    //Hamburguer open
+    &.open {
+
+        .header__menu {
+           span:first-child {
+                transform: rotate(45deg);
+           } 
+           span:nth-child(2){
+               opacity: 0;
+           }
+           span:last-child {
+                transform: rotate(-45deg);           }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient($darkBlue, transparent);
+        visibility: hidden;
+    }
+
     nav {
         padding: 2rem 2.2rem;
 
@@ -25,6 +50,9 @@
             width: 26px;
             height: 3px;
             background-color: $darkBlue;
+            transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+            transform-origin: 2px 2px;
+
 
         &:not(:last-child){
                 margin-bottom: .5rem;
