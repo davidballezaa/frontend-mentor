@@ -73,6 +73,7 @@
         margin: 2.4rem;
         visibility: hidden;
         border-radius: 6px;
+        z-index: 1;
 
         a {
             display: block;
@@ -117,16 +118,4 @@
             }
         }
     }
-
-    &__cta {
-
-        font-size: $font-small;
-        color: $white;
-        transition: opacity 300ms ease-in-out;
-
-        &:hover {
-            opacity: 0.65;
-        }
-    }
-
 }

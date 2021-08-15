@@ -14,9 +14,13 @@ html {
 
 body {
     font-family: 'Public Sans', sans-serif;
-    font-size: $font-medium;
+    font-size: $font-small;
     font-weight: 400;
     color: $grayishBlue;
+
+    @media(min-width: 801px) {
+        font-size: $font-medium;
+    }
 
     &.no-scroll {
         overflow: hidden;
@@ -38,6 +42,14 @@ button, .button {
     padding: 1.4rem 3.5rem;
     background: linear-gradient(to right, $limeGreen, $brightCyan);
     border-radius: 4rem;
+    display: inline-block;
+    font-size: $font-small;
+    color: $white;
+    transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.65;
+        }
 }
 
 // Flexbox
@@ -65,9 +77,8 @@ button, .button {
 
 // Spacing
 
-.container-left-right{
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
+.container{
+    padding: 3.6rem 2.2rem;
 }
 
 // Visibility
