@@ -1,11 +1,27 @@
 .hero {
+
+    @media(min-width: 801px) {
+        display: flex;
+        align-items: center;
+    }
+
     &__image {
         position: relative;
-        width: 100%;
         min-height: 28.5rem;
         background: url(../../images/bg-intro-mobile.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        
+        @media(min-width: 801px){
+            flex: 1;
+            order: 2;
+            height: 655px;
+            background: url(../../images/bg-intro-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left bottom;
+        }
+        
 
         &--content {
             position: absolute;
@@ -21,6 +37,11 @@
 
     &__description {
         text-align: center;
+
+        @media(min-width: 801px){
+            flex: 1;
+            order: 1;
+        }
 
         h1 {
             font-size: 34px;
