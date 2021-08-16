@@ -1,5 +1,7 @@
 .hero {
 
+    background-color: $veryLightGray;
+
     @media(min-width: 801px) {
         display: flex;
         align-items: center;
