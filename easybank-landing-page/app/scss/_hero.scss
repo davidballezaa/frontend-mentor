@@ -36,8 +36,8 @@
 
   &__description {
     text-align: center;
-
     @media (min-width: 801px) {
+      text-align: initial;
       flex: 2;
       order: 1;
     }
@@ -45,6 +45,10 @@
     h1 {
       font-size: 34px;
       margin-bottom: 3rem;
+
+      @media (min-width: 801px) {
+        font-size: 52px;
+      }
     }
 
     p {

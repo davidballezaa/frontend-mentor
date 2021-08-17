@@ -2,6 +2,10 @@
   background-color: $lightGrayishBlue;
   text-align: center;
 
+  @media (min-width: 801px) {
+    text-align: initial;
+  }
+
   &__title {
     font-weight: 400;
     margin-bottom: 55px;
@@ -11,6 +15,12 @@
       font-weight: 400;
       margin-bottom: 15px;
     }
+
+    p {
+      @media (min-width: 801px) {
+        max-width: 655px;
+      }
+    }
   }
 
   &__characteristics {
@@ -18,7 +28,19 @@
       margin-bottom: 35px;
     }
 
+    @media (min-width: 801px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+    }
+
     .characteristics__item {
+      margin: 0 auto 30px auto;
+      max-width: 37rem;
+      @media (min-width: 801px) {
+        max-width: 28rem;
+      }
+
       > * {
         margin-bottom: 15px;
       }
@@ -26,6 +48,12 @@
       h3 {
         font-size: 2rem;
         font-weight: 400;
+      }
+
+      p {
+        @media (min-width: 801px) {
+          font-size: $font-medium;
+        }
       }
     }
   }
