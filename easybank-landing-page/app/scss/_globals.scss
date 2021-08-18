@@ -97,8 +97,8 @@ button,
 
 .container {
   padding: 3.6rem 2.2rem;
-  padding-top: 11rem;
   @media (min-width: 1024px) {
+    padding-top: 11rem;
     padding-left: 17rem;
     padding-right: 16.5rem;
   }
