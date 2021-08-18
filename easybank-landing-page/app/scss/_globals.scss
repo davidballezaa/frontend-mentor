@@ -18,14 +18,19 @@ body {
   font-size: $font-small;
   font-weight: 400;
   color: $grayishBlue;
+  overflow-x: hidden;
 
-  @media (min-width: 801px) {
+  @media (min-width: 1024px) {
     font-size: $font-large;
   }
 
   &.no-scroll {
     overflow: hidden;
   }
+}
+
+main {
+  background-color: $veryLightGray;
 }
 
 a,
@@ -92,7 +97,8 @@ button,
 
 .container {
   padding: 3.6rem 2.2rem;
-  @media (min-width: 801px) {
+  padding-top: 11rem;
+  @media (min-width: 1024px) {
     padding-left: 17rem;
     padding-right: 16.5rem;
   }
@@ -102,13 +108,13 @@ button,
 
 .hide-for-desktop {
   //Hide mobile items
-  @media (min-width: 801px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 }
 
 .hide-for-mobile {
-  @media (max-width: 800px) {
+  @media (max-width: 1023px) {
     //Hide desktop items
     display: none;
   }

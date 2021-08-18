@@ -2,7 +2,7 @@
   background-color: $lightGrayishBlue;
   text-align: center;
 
-  @media (min-width: 801px) {
+  @media (min-width: 1024px) {
     text-align: initial;
   }
 
@@ -17,7 +17,11 @@
     }
 
     p {
-      @media (min-width: 801px) {
+      margin: 0 auto;
+      max-width: 350px;
+
+      @media (min-width: 1024px) {
+        margin: 0;
         max-width: 655px;
       }
     }
@@ -28,8 +32,12 @@
       margin-bottom: 35px;
     }
 
-    @media (min-width: 801px) {
+    @media (min-width: 800px) {
       display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 30px;
     }
@@ -37,7 +45,7 @@
     .characteristics__item {
       margin: 0 auto 30px auto;
       max-width: 37rem;
-      @media (min-width: 801px) {
+      @media (min-width: 1024px) {
         max-width: 28rem;
       }
 
@@ -51,7 +59,7 @@
       }
 
       p {
-        @media (min-width: 801px) {
+        @media (min-width: 1024px) {
           font-size: $font-medium;
         }
       }

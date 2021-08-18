@@ -1,42 +1,70 @@
 .hero {
   background-color: $veryLightGray;
+  max-width: 1200px;
+  margin: 0 auto;
 
-  @media (min-width: 801px) {
+  @media (min-width: 1024px) {
     display: flex;
     align-items: center;
   }
 
   &__image {
     position: relative;
-    min-height: 28.5rem;
-    background: url(../../images/bg-intro-mobile.svg);
-    background-repeat: no-repeat;
+    background-image: url(../../images/bg-intro-mobile.svg);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 28rem;
 
-    @media (min-width: 801px) {
+    @media (min-width: 800px) {
+      min-height: 40rem;
+    }
+
+    @media (min-width: 1024px) {
       flex: 3;
       order: 2;
       height: 655px;
-      background: url(../../images/bg-intro-desktop.svg);
-      background-repeat: no-repeat;
-      background-size: 150%;
-      background-position: 20% 110%;
+      background-image: none;
     }
 
-    &--content {
+    &::before {
+      @media (min-width: 1024px) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: 0 80%;
+      }
+    }
+
+    &::after {
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url(../../images/image-mockups.png);
+      background-image: url(../../images/image-mockups.png);
       background-repeat: no-repeat;
+      background-size: 93%;
       background-position: center bottom;
-      background-size: 87%;
+
+      @media (min-width: 500px) {
+        background-size: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        background-size: 94%;
+        background-position: center 150%;
+      }
     }
   }
 
   &__description {
     text-align: center;
-    @media (min-width: 801px) {
+    padding-right: 0;
+    @media (min-width: 1024px) {
       text-align: initial;
       flex: 2;
       order: 1;
@@ -46,7 +74,7 @@
       font-size: 34px;
       margin-bottom: 3rem;
 
-      @media (min-width: 801px) {
+      @media (min-width: 1024px) {
         font-size: 52px;
       }
     }
