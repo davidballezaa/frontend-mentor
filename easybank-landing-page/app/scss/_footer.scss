@@ -36,15 +36,15 @@
         margin-top: 25px;
       }
 
-      > * {
-        transition: all 300ms ease-in-out;
-      }
-
-      > *:not(:last-child) {
+      a:not(:last-child) {
         margin-right: 10px;
+
+        svg path {
+          transition: all 300ms ease-in-out;
+        }
       }
 
-      > *:hover {
+      a:hover svg path {
         fill: $limeGreen;
       }
     }
