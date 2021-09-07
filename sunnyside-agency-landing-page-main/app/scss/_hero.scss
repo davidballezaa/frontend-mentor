@@ -1,0 +1,30 @@
+.hero {
+  background-image: url("/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (min-width: 600px) {
+    height: 70vh;
+    background-image: url("/images/desktop/image-header.jpg");
+  }
+
+  &__text {
+    h1 {
+      color: $white;
+      letter-spacing: 1px;
+      margin: 4rem 0;
+    }
+    img {
+      margin-bottom: 12rem;
+    }
+  }
+}
+
+.header {
+  padding: 4rem 2rem;
+
+  &__hamburguer {
+    cursor: pointer;
+  }
+}

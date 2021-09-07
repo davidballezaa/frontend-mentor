@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: "Fraunces";
+}
+
+.flex {
+  display: flex;
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-d-c {
+    flex-direction: column;
+  }
+}
+
+.hide-for-desktop {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @media (max-width: 799px) {
+    display: none;
+  }
+}
