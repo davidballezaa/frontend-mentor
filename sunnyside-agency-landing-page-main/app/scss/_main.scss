@@ -1,0 +1,47 @@
+main {
+  .first__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .section__image {
+      @media (min-width: 800px) {
+        order: 2;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .section__description {
+      @media (min-width: 800px) {
+        order: 1;
+      }
+
+      .description__text {
+        text-align: left;
+        @media (max-width: 799px) {
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 3.5rem;
+          color: $veryDarkDesaturatedBlue;
+          margin-top: 50px;
+        }
+
+        > * {
+          margin: 0px 40px 50px 40px;
+          max-width: 450px;
+        }
+
+        p {
+          color: $darkGrayishBlue;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
